@@ -243,7 +243,18 @@ a:hover { text-decoration: underline; }
   margin-bottom: 1.5rem;
   padding-bottom: .5rem;
   border-bottom: 2px solid var(--gray-200);
+  display: flex;
+  align-items: center;
+  gap: .5rem;
 }
+.li-badge {
+  display: inline-flex;
+  align-items: center;
+  opacity: .85;
+  transition: opacity .15s;
+  line-height: 0;
+}
+.li-badge:hover { opacity: 1; text-decoration: none; }
 
 .job { margin-bottom: 2rem; }
 .job-header h3 {
